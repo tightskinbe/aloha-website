@@ -1,0 +1,402 @@
+/* extra box */
+
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+p {
+    font-size: 25px;
+    color: black;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.3);
+    
+}
+
+.banner-p p {
+    color: white;
+    /* text-align: center; */
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+    
+}
+
+
+h2 {
+    font-size: 50px;
+    color: green;
+}
+
+/* common layot classes */
+
+.container {
+    max-width: 1240px;
+    /* display: flex; */
+    margin: 0 auto;
+    /* text-align: center; */
+    padding: 20px;
+}
+
+.container-small {
+    width: 740px;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+/* banner image */
+.banner {
+    
+    /* display: block; */
+    padding: 200px 0px;
+    background-image: url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: top, center;
+    background-size: contain, cover;
+}
+
+/* section{
+    text-align: center;
+} */
+
+.make-text-small, h3 {
+    font-size: 15px;
+}
+
+
+
+.bgi-mens {
+    background-image: url(../images/mens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    height: 25vw;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.c-text {
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+
+    
+}
+
+.bgi-trends {
+    background-image: url(../images/trends-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    height: 25vw;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.trends {
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    
+}
+
+
+.bgi-glasses {
+    background-image: url(../images/glasses-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, bottom;
+    height: 25vw;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+    
+}
+
+.glasses {
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    
+}
+
+
+.bgi-sale {
+    background-image: url(../images/sale-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, bottom;
+    height: 24.5vw;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.sale {
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    
+}
+
+
+.bgi-bags {
+    background-image: url(../images/bags-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, bottom;
+    height: 25vw;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.bags {
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    
+}
+
+
+
+.bgi-woman {
+    background-image: url(../images/womens-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, bottom;
+    height: 25vw;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.woman {
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    
+
+
+}
+
+
+/* a tags down here */
+
+
+
+
+a:hover {
+    color: blue;
+}
+
+a{
+    color: white;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+}
+
+li a{
+    color: red;
+}
+
+
+
+  .flex-footer {
+      background-color: rgba(36, 36, 36, 1);
+      display: flex;
+      justify-content: space-between;
+  
+  }
+
+  .color-one, .color-one p {
+      color: white;
+      text-shadow: 2px 2px rgba(128, 128, 128, 0.3);
+
+  }
+
+  .color-two {
+    color: white;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.3);
+}
+
+
+  .padding-left {
+      padding-left: 400px;
+      line-height: 30px;
+      padding-top: 30px;
+  }
+
+  .padding-right {
+    padding-right: 500px;
+    padding-top: 50px;
+    line-height: 30px;
+  }
+
+
+  .padding-bottom {
+      padding-bottom: 20px;
+  }
+
+
+
+
+  .flex-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .own-felx {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .aloha-logo {
+    width: 170px;
+    height: 78px;
+  }
+
+  .aloha-bin {
+    width: 110px;
+    height: 68px;
+    padding-left: 50px;
+  }
+
+
+
+  .spread-em {
+      width: 60%;
+      justify-content: space-evenly;
+  }
+
+  .site-nav a{
+    padding: 10px;
+    padding-right: 40px;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: 'Raleway'
+  }
+
+
+  .white-hover a{
+      text-decoration: none;
+      color: white;
+  }
+
+  .white-hover a:hover {
+      color: orangered;
+  }
+
+  .flex-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* padding: 5px; */
+  }
+
+
+  .flex-images a {
+      text-decoration: none;
+      font-size: 40px;
+      text-transform: uppercase;
+  }
+
+  .add-border {
+    border: 4px solid white;
+  }
+
+  .water-img {
+    background-image: url(../images/wave-bkgd.jpg);
+    margin-bottom: 10px;
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 8em;
+  }
+
+  .text-in-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 63px;
+
+  }
+ .text-in-image h2{
+    padding-bottom: 50px;
+
+
+  }
+
+.add-banner-font {
+ 
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.small-ps {
+    font-size: 1.25rem;
+    text-transform: uppercase; 
+}
+
+.big-banner-f {
+    font-size: 3rem;
+    font-family: Playfair Display, Arial;
+}
+
+.small-text {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.move-email {
+    position: relative;
+    top: 40px;
+}
+
+.circle-email {
+    width: 200%;
+    border-radius: 20px;
+    border: 0;
+    padding: 4px 50px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+input[type=email] {
+    padding: 1rem 0.75rem;
+    padding-right: 20rem;
+    width: 100%;
+}
+
+
+.circle-sub {
+
+    background: #e2574c;
+    color: white;
+    padding: 2px 10px;
+    position: absolute;
+    top: 1px;
+    right: 4px;
+    border-radius: 20px;
+    height: 47px;
+    width: 7rem;
+    font-size: 1rem;
+}
