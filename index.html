@@ -5,13 +5,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>This is the Tittle</title>
+  <title>Aloha</title>
+
+
 
   <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- Flickity JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script src="./javascript/flickity.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/flickity.css">
+
 </head>
 
 <body>
@@ -88,65 +97,94 @@
       </span>
     </div>
   </section>
+
+  <!-- most loved here -->
+
   <section>
     <div>
       <h2><em>Most-loved</em> Products</h2>
     </div>
   </section>
   <section>
-    <div>
-      <img src="images/stretch-knit-dress.jpg" alt="image of pokadot dress" />
-      <p>Dresses</p>
-      <h3>Stretch Knit Dress</h3>
-      <p>$169.00</p>
+    <div class="main-carousel">
+      <div class="carousel-cell">
+        <img src="images/stretch-knit-dress.jpg" alt="image of pokadot dress" />
+        <p>Dresses</p>
+        <h3>Stretch Knit Dress</h3>
+        <p>$169.00</p>
+      </div>
+
+      <div class="carousel-cell">
+        <!-- product html here e.g. image, category, title & price  -->
+        <img src="images/cotton-blue-shirt.jpg" alt="A blue jean shirt" />
+        <p>Shirts</p>
+        <h3>Cotton Blue Shirt</h3>
+        <p>$89.00</p>
+      </div>
+
+      <div class="carousel-cell">
+        <!-- product html here e.g. image, category, title & price  -->
+        <img src="images/checked-stretch-dress.jpg" alt="A red dress" />
+        <p>Dresses</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
+
+      </div>
+
+
+      <div class="carousel-cell">
+        <!-- product html here e.g. image, category, title & price  -->
+        <img src="images/blue-hipster-backpack.jpg" alt="A backpack" />
+        <p>Bags</p>
+        <h3>Blue Hipster Backpack</h3>
+        <p>$69.00</p>
+      </div>
+
+
+      <div class="carousel-cell">
+        <!-- product html here e.g. image, category, title & price  -->
+        <img src="images/demin-overall-shorts.jpg" alt="Jean shorts" />
+        <p>Demim</p>
+        <h3>demin overall shorts</h3>
+        <p>$89.00</p>
+      </div>
+
+
+      <div class="carousel-cell">
+        <!-- product html here e.g. image, category, title & price  -->
+        <img src="images/pink-dotted-dress.jpg" alt="a pink dotted dress" />
+        <p>Dresses</p>
+        <h3>Pink Dotted Dress</h3>
+        <p>$99.00</p>
+      </div>
+
+
+      <div class="carousel-cell">
+        <!-- product html here e.g. image, category, title & price  -->
+        <img src="images/blue-silk-dress.jpg" alt="a blue silk dress" />
+        <p>Dresses</p>
+        <h3>Blue Silk Dress</h3>
+        <p>$119.00</p>
+      </div>
+
+
+      <div class="carousel-cell">
+        <!-- product html here e.g. image, category, title & price  -->
+        <img src="images/cotton-yellow-tshirt.jpg" alt="a cotton yellow tshirt" />
+        <p>Shirts</p>
+        <h3>Cotton Yellow Tshirt</h3>
+        <p>$40.00</p>
+      </div>
     </div>
 
-    <div>
-      <img src="images/cotton-blue-shirt.jpg" alt="A blue jean shirt" />
-      <p>Shirts</p>
-      <h3>Cotton Blue Shirt</h3>
-      <p>$89.00</p>
-    </div>
-    <div>
-      <img src="images/checked-stretch-dress.jpg" alt="A red dress" />
-      <p>Dresses</p>
-      <h3>Checked Stretch Dress</h3>
-      <p>$129.00</p>
-    </div>
-    <div>
-      <img src="images/blue-hipster-backpack.jpg" alt="A backpack" />
-      <p>Bags</p>
-      <h3>Blue Hipster Backpack</h3>
-      <p>$69.00</p>
-    </div>
 
-    <div>
-      <img src="images/demin-overall-shorts.jpg" alt="Jean shorts" />
-      <p>Demim</p>
-      <h3>demin overall shorts</h3>
-      <p>$89.00</p>
-    </div>
 
-    <div>
-      <img src="images/pink-dotted-dress.jpg" alt="a pink dotted dress" />
-      <p>Dresses</p>
-      <h3>Pink Dotted Dress</h3>
-      <p>$99.00</p>
-    </div>
 
-    <div>
-      <img src="images/blue-silk-dress.jpg" alt="a blue silk dress" />
-      <p>Dresses</p>
-      <h3>Blue Silk Dress</h3>
-      <p>$119.00</p>
-    </div>
+    <!-- after the slidder -->
 
-    <div>
-      <img src="images/cotton-yellow-tshirt.jpg" alt="a cotton yellow tshirt" />
-      <p>Shirts</p>
-      <h3>Cotton Yellow Tshirt</h3>
-      <p>$40.00</p>
-    </div>
+
+
+
   </section>
   <section class="water-img">
     <div class="text-in-image">
@@ -194,8 +232,8 @@
       </ul>
     </div>
   </footer>
-  <script src="./javascript/script.js">
-  </script>
+  <script src="./javascript/script.js"></script>
+
 </body>
 
 </html>

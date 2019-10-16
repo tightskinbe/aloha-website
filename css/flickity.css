@@ -1,0 +1,15 @@
+/* mobile style */
+.carousel-cell {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  /* media query example */
+@media screen and (min-width: 600px) {
+    .carousel-cell {
+      width: 25%;
+    }
+  }
+
+  
