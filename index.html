@@ -15,22 +15,25 @@
 </head>
 
 <body>
-  <header class="container flex-header">
+  <header class="flex-header">
     <!-- <h1>Aloha<span> APPAREL CO</span></h1> -->
-    <div>
-      <img src="images/aloha-logo.svg" alt="Aloha logo" class="aloha-logo" />
+    <div class="banner-logo">
+      <img src="images/aloha-logo.svg" alt="Aloha logo" />
     </div>
-    <div class="own-flex">
-      <ul class="container flex-header site-nav">
+
+    <div class="cart-icon">
+      <img src="images/cart-icon.svg" alt="Check out" />
+    </div>
+
+    <nav class="nav-center">
+      <ul>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#shop">SHOP</a></li>
         <li><a href="#featured">FEATURED</a></li>
         <li><a href="#updates">UPDATES</a></li>
       </ul>
-    </div>
-    <div>
-      <img src="images/cart-icon.svg" alt="Check out" class="aloha-bin" />
-    </div>
+    </nav>
+
   </header>
 
   <section>
@@ -40,32 +43,35 @@
     </div>
   </section>
   <section>
-    <div>
-      <h2><em>Hand-Crafted</em> Styles</h2>
-      <p>Aloha Apparel CO. sells only the finest ready-to-travel clothing.</p>
-      <p>
+    <div class="padding">
+      <h2>Hand-Crafted <em class="bold">Styles</em></h2>
+      <p class="small-text white-space">Aloha Apparel CO. sells only the finest ready-to-travel clothing.</p>
+      <p class="small-text white-space">
         Browse our current selection of products or sign-up for updates
-        <br />below.<br />
+        <br>below.</br>
       </p>
     </div>
   </section>
-  <section class="flex-images">
+  <section>
     <div class="bgi-mens container-small c-text add-border">
       <!-- <span class="mens"> -->
-      <a href="#">Men's</a>
-      <!-- </span> -->
-    </div>
-    <div class="bgi-trends container-small c-text add-border">
-      <!-- <span class="trends"> -->
-      <a href="#">Trends</a>
-      <!-- </span> -->
-    </div>
-    <div class="bgi-glasses container-small c-text add-border">
-      <!-- <span class="glasses"> -->
-      <a href="#">Glasses</a>
+      <a href="#" class="no-line">Men's</a>
       <!-- </span> -->
     </div>
   </section>
+  <section class="flex-images">
+    <div class="bgi-trends container-small c-text add-border">
+
+      <a href="#">Trends</a>
+
+    </div>
+    <div class="bgi-glasses container-small c-text add-border">
+
+      <a href="#">Glasses</a>
+
+    </div>
+  </section>
+
   <section class="flex-images c-text add-border">
     <div class="bgi-sale container-small">
       <span class="sale">
@@ -77,13 +83,14 @@
         <a href="#">Bags</a>
       </span>
     </div>
+  </section>
+  <section>
     <div class="bgi-woman container-small c-text add-border">
       <span class="woman">
-        <a href="#">Woman's</a>
+        <a href="#" class="no-line">Woman's</a>
       </span>
     </div>
   </section>
-
   <section>
     <div>
       <h2><em>Most-loved</em> Products</h2>
@@ -146,7 +153,7 @@
   </section>
   <section class="water-img">
     <div class="text-in-image">
-      <h2><em>Sign-up for</em> Updates</h2>
+      <h2>Sign-up for <em class="reg-font">Updates</em></h2>
       <p class="small-text">
         Stay updated on our latest product releases, be first to find out
         about upcoming sales, and get free style tips from our blog.

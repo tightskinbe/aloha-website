@@ -10,7 +10,7 @@ html {
 }
 
 p {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: black;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.3);
     
@@ -25,18 +25,24 @@ p {
 
 
 h2 {
-    font-size: 50px;
-    color: green;
+    font-size: 2.125rem;
+    color: black;
+    font-family: Playfair Display Web,serif;
+    line-height: 2;
+    font-style: italic;
+    text-align: center;
 }
+
+.class
 
 /* common layot classes */
 
 .container {
-    max-width: 1240px;
+    min-width: 1240px;
     /* display: flex; */
     margin: 0 auto;
     /* text-align: center; */
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .container-small {
@@ -49,7 +55,7 @@ h2 {
 .banner {
     
     /* display: block; */
-    padding: 200px 0px;
+    padding: 12.5rem 0px;
     background-image: url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
     background-repeat: no-repeat, repeat;
     background-position: top, center;
@@ -61,7 +67,7 @@ h2 {
 } */
 
 .make-text-small, h3 {
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 
@@ -71,8 +77,8 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
-    height: 25vw;
-    width: 50%;
+    height: 50vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +87,7 @@ h2 {
 
 .c-text {
     text-align: center;
-    line-height: 200px;
+    line-height: 12.5rem;
     font-size: 30px;
 
     
@@ -92,8 +98,8 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
-    height: 25vw;
-    width: 25%;
+    height: 40vw;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center
@@ -102,7 +108,7 @@ h2 {
 
 .trends {
     text-align: center;
-    line-height: 200px;
+    line-height: 12.5rem;
     font-size: 30px;
     
 }
@@ -113,18 +119,16 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, bottom;
-    height: 25vw;
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center
+    height: 40vw;
+    width: 50%;
+
 
     
 }
 
 .glasses {
     text-align: center;
-    line-height: 200px;
+    line-height: 12.5rem;
     font-size: 30px;
     
 }
@@ -135,17 +139,18 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, bottom;
-    height: 24.5vw;
-    width: 25%;
+    height: 39vw;
+    width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    margin-right: 4px;
     
 }
 
 .sale {
     text-align: center;
-    line-height: 200px;
+    line-height: 12.5rem;
     font-size: 30px;
     
 }
@@ -156,8 +161,8 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, bottom;
-    height: 25vw;
-    width: 25%;
+    height: 40vw;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center
@@ -166,7 +171,7 @@ h2 {
 
 .bags {
     text-align: center;
-    line-height: 200px;
+    line-height: 12.5rem;
     font-size: 30px;
     
 }
@@ -178,8 +183,8 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, bottom;
-    height: 25vw;
-    width: 50%;
+    height: 50vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center
@@ -202,12 +207,16 @@ h2 {
 
 
 a:hover {
-    color: blue;
+    color: #dad2b3;
 }
 
 a{
     color: white;
     text-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+}
+
+.no-line {
+    text-decoration: none;
 }
 
 li a{
@@ -236,13 +245,13 @@ li a{
 
 
   .padding-left {
-      padding-left: 400px;
+      /* padding-left: 400px; */
       line-height: 30px;
       padding-top: 30px;
   }
 
   .padding-right {
-    padding-right: 500px;
+    /* padding-right: 500px; */
     padding-top: 50px;
     line-height: 30px;
   }
@@ -254,27 +263,52 @@ li a{
 
 
 
-
   .flex-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
 
-  .own-felx {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
   }
+.banner-logo {
+    align-self: flex-start;
+    flex-shrink: 1;
+    flex-basis: 50%;
+
+}
+
+.nav-center {
+    align-self: center;
+}
+
+
+/* .cart-icon {
+    align-self: flex-end;
+    text-align: right;
+    width: 50px;
+    flex-shrink: 1;
+    flex-basis: 50%;
+} */
+
+
+
+
   .aloha-logo {
-    width: 170px;
-    height: 78px;
+    width: auto;
+    height: auto;
+    
   }
 
   .aloha-bin {
-    width: 110px;
-    height: 68px;
+    width: auto;
+    height: auto;
     padding-left: 50px;
+    text-align: right;
+  }
+
+  .cart {
+      text-align: left;
   }
 
 
@@ -308,13 +342,14 @@ li a{
       display: flex;
       justify-content: center;
       align-items: center;
+      /* flex-direction: column; */
       /* padding: 5px; */
   }
 
 
   .flex-images a {
       text-decoration: none;
-      font-size: 40px;
+      font-size:22px;
       text-transform: uppercase;
   }
 
@@ -342,9 +377,22 @@ li a{
   }
  .text-in-image h2{
     padding-bottom: 50px;
+    font-family: Playfair Display Web,serif;
+    line-height: 1;
+    font-style: italic;
 
 
   }
+
+.padding {
+    padding: 3rem;
+}
+
+
+.reg-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
 
 .add-banner-font {
  
@@ -363,9 +411,17 @@ li a{
 }
 
 .small-text {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     text-align: center;
 }
+
+
+.line-height {
+    line-height: 40px;
+}
+
+
+
 
 .move-email {
     position: relative;
@@ -400,4 +456,14 @@ input[type=email] {
     height: 47px;
     width: 7rem;
     font-size: 1rem;
+}
+
+font-change {
+    font-family: Playfair Display Web,serif;
+    line-height: 1;
+}
+
+.bold {
+    font-style: normal;
+    font-weight: bold;
 }
