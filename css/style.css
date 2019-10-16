@@ -263,52 +263,30 @@ li a{
 
 
 
+
   .flex-header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 0.5rem;
-    padding-top: 1rem;
+      
   }
-.banner-logo {
-    align-self: flex-start;
-    flex-shrink: 1;
-    flex-basis: 50%;
-
-}
-
-.nav-center {
-    align-self: center;
-}
-
-
-/* .cart-icon {
-    align-self: flex-end;
-    text-align: right;
-    width: 50px;
-    flex-shrink: 1;
-    flex-basis: 50%;
-} */
-
-
-
-
+/* 
+  .own-felx {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  } */
   .aloha-logo {
-    width: auto;
-    height: auto;
-    
+    width: 10.625rem;
+    height: 4.875rem;
   }
 
   .aloha-bin {
-    width: auto;
-    height: auto;
+    width: 110px;
+    height: 68px;
     padding-left: 50px;
-    text-align: right;
-  }
-
-  .cart {
-      text-align: left;
   }
 
 
