@@ -12,7 +12,6 @@ html {
 p {
     font-size: 1.5625rem;
     color: black;
-    text-shadow: 2px 2px rgba(128, 128, 128, 0.3);
     
 }
 
@@ -212,7 +211,6 @@ a:hover {
 
 a{
     color: white;
-    text-shadow: 2px 2px rgba(128, 128, 128, 0.5);
 }
 
 .no-line {
@@ -220,7 +218,7 @@ a{
 }
 
 li a{
-    color: red;
+    color: #e2574c;
 }
 
 
@@ -264,30 +262,119 @@ li a{
 
 
 
-  .flex-header {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: center;
 
+
+
+
+/* Flexing the header here */
+
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 500px;
+    padding-bottom: 60px;
+}
+
+
+.header-ul {
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    top: 60px;
+    right: 7%;
+    border-top: 1px solid #d7d7d7;
+
+
+
+}
+
+.header-ul li {
+padding: 20px;
+}
+
+.header-ul li a {
+    text-decoration: none;
+}
+
+.header-ul li a:hover {
+    color: #b64036;
+}
+
+
+/* flexing the header end */
       
-  }
-/* 
-  .own-felx {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
   .aloha-logo {
-    width: 10.625rem;
-    height: 4.875rem;
+    max-width: 120px;
+    height: auto;
+    padding: 10px;
   }
 
   .aloha-bin {
-    width: 110px;
-    height: 68px;
-    padding-left: 50px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 3px;
   }
+
+
+
+
+  .intro-img {
+      text-align: center;
+  }
+
+  .intro-img p {
+    text-shadow: 1px 1px black;
+
+}
+
+
+.hand-crafted-div {
+margin: 0 auto;
+width: 100%;
+padding: 0% 5%;
+line-height: 1;
+font-size: 100%;
+}
+
+.hand-crafted-div p {
+text-align: center;
+line-height: 35px;
+font-size: 1.15rem;
+}
+
+.carousel-container {
+    padding-bottom: 50px;
+}
+
+main-carousel {
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -445,3 +532,11 @@ font-change {
     font-style: normal;
     font-weight: bold;
 }
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+ }

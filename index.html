@@ -6,53 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Aloha</title>
-
-
-
   <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <!-- Flickity JavaScript -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-  <script src="./javascript/flickity.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/fonts.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/flickity.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 
 </head>
 
 <body>
-  <header class="container flex-header">
-    <!-- <h1>Aloha<span> APPAREL CO</span></h1> -->
-    <div>
+  <header>
+    <div class="header-flex">
+      <h1 class="screen-reader-text">Aloha Apparel Co.</h1>
       <img src="images/aloha-logo.svg" alt="Aloha logo" class="aloha-logo" />
-    </div>
-    <div class="own-flex">
-      <ul class="container flex-header site-nav">
+      <img src="images/cart-icon.svg" alt="Check out" class="aloha-bin" />
+      <ul class="header-ul">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#shop">SHOP</a></li>
         <li><a href="#featured">FEATURED</a></li>
         <li><a href="#updates">UPDATES</a></li>
       </ul>
     </div>
-    <div>
-      <img src="images/cart-icon.svg" alt="Check out" class="aloha-bin" />
-    </div>
   </header>
 
   <section>
     <div class="banner banner-p add-banner-font">
-      <p class="padding-bottom small-ps">New collection</p>
-      <p class="big-banner-f">Spring/Summer 2019</p>
+      <div class="intro-img">
+        <p class="padding-bottom small-ps">New collection</p>
+        <p class="big-banner-f">Spring/Summer 2019</p>
+      </div>
     </div>
   </section>
   <section>
-    <div class="padding">
+    <div class="hand-crafted-div">
       <h2>Hand-Crafted <em class="bold">Styles</em></h2>
-      <p class="small-text white-space">Aloha Apparel CO. sells only the finest ready-to-travel clothing.</p>
-      <p class="small-text white-space">
+      <p>Aloha Apparel CO. sells only the finest ready-to-travel clothing.
         Browse our current selection of products or sign-up for updates
         <br>below.</br>
       </p>
@@ -105,7 +96,7 @@
       <h2><em>Most-loved</em> Products</h2>
     </div>
   </section>
-  <section>
+  <section class="carousel-container">
     <div class="main-carousel">
       <div class="carousel-cell">
         <img src="images/stretch-knit-dress.jpg" alt="image of pokadot dress" />
@@ -194,9 +185,9 @@
         about upcoming sales, and get free style tips from our blog.
         Unsubscribe at any time.
       </p>
-      <form method="POST" class="move-email">
-        <input class="circle-email" type="email" placeholder="Your email" />
-        <input class="circle-sub" type="submit" value="Subscribe" />
+      <form method="POST" class="move-email" id="form">
+        <input id="email" class="circle-email" type="email" placeholder="Your email" />
+        <input id="submit" class="circle-sub" type="submit" value="Subscribe" />
       </form>
     </div>
   </section>
@@ -232,8 +223,10 @@
       </ul>
     </div>
   </footer>
-  <script src="./javascript/script.js"></script>
-
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./javascript/flickity.js"></script>
+  <script src="./javascript/script.js">
+  </script>
 </body>
 
 </html>
