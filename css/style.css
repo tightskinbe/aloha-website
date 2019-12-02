@@ -226,13 +226,18 @@ li a{
   .flex-footer {
       background-color: rgba(36, 36, 36, 1);
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 300px;
   
   }
 
   .color-one, .color-one p {
       color: white;
       text-shadow: 2px 2px rgba(128, 128, 128, 0.3);
+      line-height: 2;
+      text-align: center;
 
   }
 
@@ -266,29 +271,80 @@ li a{
 
 
 
+  .phone-footer {
+      margin: 10px;
+  }
+
+
+
+
+
+
+
+
 /* Flexing the header here */
 
 
-.header-flex {
+header {
+    padding: 10px;
+  overflow: hidden;
+}
+
+.header-h1 {
+    display: none;
+}
+
+
+.flex-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 500px;
-    padding-bottom: 60px;
-}
-
-
-.header-ul {
-    display: flex;
+    width: 100%;
     margin: 0 auto;
-    position: absolute;
-    top: 60px;
-    right: 7%;
-    border-top: 1px solid #d7d7d7;
+}
+
+.header-title {
+    align-self: flex-start;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
 
 
+.header-bin {
+    align-self: flex-end;
+    cursor: pointer;    
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    text-align: right;
+    width: 50px;
+}
+
+.header-nav {
+    align-self: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
 
 }
+
+.header-nav ul {
+    padding-top: .5rem;
+    text-align: center;
+    border-top: 1px solid #d7d7d7;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-nav ul li {
+    padding: 10px;
+}
+.header-nav ul li a {
+    text-decoration: none;
+}
+
 
 .header-ul li {
 padding: 20px;
@@ -301,6 +357,14 @@ padding: 20px;
 .header-ul li a:hover {
     color: #b64036;
 }
+
+
+
+
+
+
+
+
 
 
 /* flexing the header end */
@@ -327,10 +391,7 @@ padding: 20px;
   .aloha-bin {
     width: 50px;
     height: 50px;
-    position: absolute;
-    right: 0;
-    margin-right: 10px;
-    margin-top: 3px;
+ 
   }
 
 
@@ -373,9 +434,19 @@ main-carousel {
 
 
 
+.itilic {
+    font-style: italic;
+}
 
+.normal-font {
+    font-style: normal;
+    font-weight: bold;
+}
 
-
+.carousel-cell h3 {
+    font-size: 22px;
+    color: #e2574c;
+}
 
 
   .spread-em {
@@ -438,6 +509,7 @@ main-carousel {
     flex-direction: column;
     position: relative;
     bottom: 63px;
+    line-height: 2;
 
   }
  .text-in-image h2{
@@ -487,10 +559,27 @@ main-carousel {
 
 
 
+.hide-footer-text {
+    display: none;
+}
+
+.ul-flex {
+    display: flex;
+    padding: 10px;
+
+}
+
+.ul-flex li {
+    padding: 10px;
+}
+
+
 
 .move-email {
     position: relative;
     top: 40px;
+    width: 90%;
+
 }
 
 .circle-email {
@@ -540,3 +629,57 @@ font-change {
     width: 1px;
     overflow: hidden;
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Start of media Styleing!!!!!!!!  */
+
+ @media (min-width: 600px) {
+
+    .flex-header {
+        flex-wrap: nowrap;
+    }
+
+    .header-title {
+        flex-basis: 20%;
+        order: 1    
+    }
+
+    .header-title img {
+          max-width: 120px;
+    }
+
+    .header-bin {
+        flex-basis: 20%;
+        order: 3;
+    }
+
+    .header-nav {
+        flex-basis: 60%;
+        order: 2;
+    }
+
+    .header-nav ul {
+      border: none;
+    }
+
+
+
+ }
+ /*  end of MEDIA 600px!!!!!!!!!! */

@@ -19,16 +19,22 @@
 
 <body>
   <header>
-    <div class="header-flex">
-      <h1 class="screen-reader-text">Aloha Apparel Co.</h1>
-      <img src="images/aloha-logo.svg" alt="Aloha logo" class="aloha-logo" />
-      <img src="images/cart-icon.svg" alt="Check out" class="aloha-bin" />
-      <ul class="header-ul">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#shop">SHOP</a></li>
-        <li><a href="#featured">FEATURED</a></li>
-        <li><a href="#updates">UPDATES</a></li>
-      </ul>
+    <div class="flex-header">
+      <div class="header-title">
+        <h1 class="header-h1">Aloha Apparel Co.</h1>
+        <img src="images/aloha-logo.svg" alt="Aloha logo" class="aloha-logo" />
+      </div>
+      <div class="header-bin">
+        <img src="images/cart-icon.svg" alt="Check out" class="aloha-bin" />
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#shop">SHOP</a></li>
+          <li><a href="#featured">FEATURED</a></li>
+          <li><a href="#updates">UPDATES</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -93,7 +99,7 @@
 
   <section>
     <div>
-      <h2><em>Most-loved</em> Products</h2>
+      <h2 class="normal-font"><em class="itilic">Most-loved</em> Products</h2>
     </div>
   </section>
   <section class="carousel-container">
@@ -192,33 +198,33 @@
     </div>
   </section>
 
-  <footer class="flex-footer white-hover">
-    <div class="color-one padding-left">
+  <footer class="flex-footer">
+    <div class="color-one">
       <h3>&copy; 2019 Aloha Apparel Co.</h3>
       <h3>Powered by HTML and CSS.</h3>
-      <h3>
-        604-604-6040.
-        <a
+      <h3 class="phone-footer">604-604-6040.<a
           href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=info@alohaapparel.com">info@alohaapparel.com</a>
       </h3>
       <p class="make-text-small">1490 W Broadway</p>
       <p class="make-text-small">Vancouver, BC, Canada</p>
     </div>
     <div>
-      <ul class="color-two padding-right white-hover">
+      <ul class="ul-flex">
         <li>
-          <a href="https://www.facebook.com/LearnAtRED/"><i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="https://www.facebook.com/LearnAtRED/"><i class="fab fa-facebook-square"></i><span
+              class="hide-footer-text"> Facebook</span></a>
         </li>
         <li>
           <a href="https://twitter.com/REDAcademy?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
-              class="fab fa-twitter"></i> Twitter</a>
+              class="fab fa-twitter"></i><span class="hide-footer-text"> Twitter</span></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/red.academy/?hl=en"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://www.instagram.com/red.academy/?hl=en"><i class="fab fa-instagram"></i><span
+              class="hide-footer-text"> Instagram</span></a>
         </li>
         <li>
           <a href="https://www.youtube.com/channel/UCbNi4m-gEm136H47xuLsMqg"><i class="fab fa-pinterest-square"></i>
-            Pinterest</a>
+            <span class="hide-footer-text">Pinterest</span></a>
         </li>
       </ul>
     </div>
